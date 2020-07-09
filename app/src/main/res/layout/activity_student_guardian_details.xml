@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".StudentGuardianDetails">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/slogan_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 of 3"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="-50dp" />
+
+    <TextView
+        android:id="@+id/slogan_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register your Guardian Details (if applicable)"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/slogan_name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In order to use FSKM FoodBank, please provide some additional information. You will only need to do this once."
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/guardianname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parent's / Guardian's Name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/guardianicnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parent's / Guardian's IC Number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/occupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parent's / Guardian's Occupation"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/payslip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parent's / Guardian's Payslip"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:background="#000"
+        android:textColor="@color/fullwhite"/>
+
+</LinearLayout>

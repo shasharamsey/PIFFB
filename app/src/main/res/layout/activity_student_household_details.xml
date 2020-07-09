@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".StudentHouseholdDetails">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/slogan_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 of 3"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="-50dp" />
+
+    <TextView
+        android:id="@+id/slogan_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register your Household Details (if applicable)"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/slogan_name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In order to use FSKM FoodBank, please provide some additional information. You will only need to do this once."
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birth Order in the Family"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/noofsibling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Siblings"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/verify"
+                android:id="@+id/checkbox"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:gravity="left"/>
+        </TableRow>
+
+    </LinearLayout>
+
+    <Button
+    android:id="@+id/submitButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+    android:text="SUBMIT"
+    android:background="#000"
+    android:textColor="@color/fullwhite"/>
+
+</LinearLayout>

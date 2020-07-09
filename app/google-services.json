@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "947310616237",
+    "firebase_url": "https://piffb-546de.firebaseio.com",
+    "project_id": "piffb-546de",
+    "storage_bucket": "piffb-546de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947310616237:android:05ea0fef839ccd581db024",
+        "android_client_info": {
+          "package_name": "com.example.piffb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947310616237-jv3fra5feq7nth155oqjbn88ic7p76nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd8oLP9mYj8bbWtvX7-j_K0hC8c6Bb6PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947310616237-jv3fra5feq7nth155oqjbn88ic7p76nj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
